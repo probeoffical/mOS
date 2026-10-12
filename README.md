@@ -64,16 +64,7 @@
 4. Wait for the orange LED on the back to stop flashing.
 5. **mOS** will boot up automatically!
 
----
 
-## 🗺️ Version Roadmap (Inspired by Windows History)
-
-- [x] **mOS Pixel / Pixel Pro / SL Edition:** Core system, boot engine, System Monitor, Pong, and Scratch Link. *(Current)*
-- [ ] **mOS 7 (Toolbox Era):** Swiss army knife update including Spirit Level (tilt balance) and Compass.
-- [ ] **mOS 7.1:** Performance tuning and memory optimization patch.
-- [ ] **mOS 8:** Tile-based (Metro UI) menu experimental interface for 5x5 grid.
-- [ ] **mOS 10:** Unified architecture combining v1 and v2 builds smoothly.
-- [ ] **mOS 11:** The ultimate minimalist, modern micro-OS experience.
 
 ---
 
