@@ -71,7 +71,7 @@
 | :--- | :--- | :--- | :--- |
 | **System Menu** | Cycle / Change Option | Enter / Select App | Exit / Back to Home |
 | **PONG Game** | Move Paddle Up / Adjust | Move Paddle Down / Adjust | Exit to Main Menu |
-| **Spirit Level / Compass** | Cycle Display Mode | Select / Calibrate | Exit to Main Menu |
+
 | **Scratch Link (SL)** | Cycle Connection Mode | Initialize / Connect | Exit to Main Menu | 
 ---
 
