@@ -18,11 +18,11 @@
 
 ### 🧩 Hardware Compatibility Matrix
 
-| Version / Edition | Supported Hardware | Processor | Memory Limit | Audio Support | Touch Logo |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **mOS Pixel Alpha** | BBC micro:bit v1 / v1.5 | Nordic nRF51822 | 16 KB RAM | External Buzzer | No |
-| **mOS Pixel Pro** | BBC micro:bit v2 | Nordic nRF52833 | 128 KB RAM | Onboard Speaker | Yes |
-| **mOS Pixel SL Edition** | BBC micro:bit v1 / v1.5 / v2 | Universal | Fully Optimized | Supported (v2) | Supported (v2) |
+| Version / Edition | Supported Hardware | Processor | Memory Limit | Audio Support | Touch Logo | SL App Support |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **mOS Pixel Alpha** | BBC micro:bit v1 / v1.5 | Nordic nRF51822 | 16 KB RAM | External Buzzer | No | No |
+| **mOS Pixel Pro** | BBC micro:bit v2 | Nordic nRF52833 | 128 KB RAM | Onboard Speaker | Yes | No |
+| **mOS Pixel SL Edition** | BBC micro:bit v1 / v1.5 / v2 | Universal | Fully Optimized | Supported (v2) | Supported (v2) | **Yes (Exclusive)** |
 
 ---
 
@@ -31,7 +31,7 @@
 - **Minimalist Boot Sequence:** Expanding single-pixel animation leading straight into the mOS startup screen.
 - **System Monitor (`SYS` App):** Real-time light level checking and environmental status monitoring.
 - **Retro Pong (`PONG` App):** Classic physics-based arcade minigame optimized for the 5x5 LED grid.
-- **Scratch Link (`SL` App):** Real-time telemetry streaming (accelerometer and button states) over serial communication for live integration with Scratch.
+- **Scratch Link (`SL` App - *SL Edition Exclusive*):** Real-time telemetry streaming (accelerometer and button states) over serial communication for live integration with Scratch. Available exclusively in the universal SL Edition build.
 - **Quick Version Inspector:** Immediate status feedback anywhere in the system.
 - **Pro Edition Audio Integration (v2 only):** Interactive sound effects for navigation, wall bounces, and Game Over sequences via the onboard speaker.
 
@@ -40,7 +40,8 @@
 ## 🕹️ System Controls & Navigation
 
 ### **In Main Menu:**
-- **`Button A`:** Cycle through available applications (`System Monitor` / `Pong` / `SL`).
+- **`Button A`:** Cycle through available applications (`System Monitor` / `Pong` / `SL`*).  
+  *\*Note: The `SL` app option is available exclusively when running the mOS Pixel SL Edition firmware.*
 - **`Button B`:** Launch the selected application.
 - **`Button A + B`:** Display system build info (`mOS v1.5-v1 pixel alpha` or `mOS v2 pixel pro`).
 - **`Touch Logo` (v2 Only):** Quick system identity check (`PROBE v2`).
@@ -48,7 +49,7 @@
 ### **Inside Applications:**
 - **System Monitor:** Press `A` to read light levels. Press `A + B` to return to the main menu.
 - **Retro Pong:** Press `A` to move paddle left, `B` to move paddle right. Press `A + B` to exit to menu.
-- **Scratch Link (`SL`):** Streams live sensor data to computer. Press `A + B` to exit to menu.
+- **Scratch Link (`SL` - *SL Edition Only*):** Streams live sensor data to computer. Press `A + B` to exit to menu.
 
 ---
 
@@ -57,7 +58,7 @@
 1. Download the compiled `.hex` file corresponding to your board version or edition from the links below:
    * [`mOS_Pixel_Alpha_v1.hex`](https://github.com/probeoffical/mOS/releases/latest/download/mOS_Pixel_Alpha_v1.hex) for **v1 / v1.5 (Alpha)**
    * [`mOS_Pixel_Pro_v2.hex`](https://github.com/probeoffical/mOS/releases/latest/download/mOS_Pixel_Pro_v2.hex) for **v2 (Pro)**
-   * [`mOS-PİXEL-SL-edition-v1-v15-v2.hex`](https://github.com/probeoffical/mOS/releases/latest/download/mOS-PİXEL-SL-edition-v1-v15-v2.hex) for **Universal SL Edition**
+   * [`mOS-PİXEL-SL-edition-v1-v15-v2.hex`](https://github.com/probeoffical/mOS/releases/latest/download/mOS-PİXEL-SL-edition-v1-v15-v2.hex) for **Universal SL Edition (Includes SL App)**
 2. Connect your BBC micro:bit to your computer via USB.
 3. Drag and drop the `.hex` file directly onto the `MICROBIT` drive.
 4. Wait for the orange LED on the back to stop flashing.
@@ -65,11 +66,17 @@
 
 ---
 
+## 🗺️ Version Roadmap (Inspired by Windows History)
 
+- [x] **mOS Pixel / Pixel Pro / SL Edition:** Core system, boot engine, System Monitor, Pong, and Scratch Link. *(Current)*
+- [ ] **mOS 7 (Toolbox Era):** Swiss army knife update including Spirit Level (tilt balance) and Compass.
+- [ ] **mOS 7.1:** Performance tuning and memory optimization patch.
+- [ ] **mOS 8:** Tile-based (Metro UI) menu experimental interface for 5x5 grid.
+- [ ] **mOS 10:** Unified architecture combining v1 and v2 builds smoothly.
+- [ ] **mOS 11:** The ultimate minimalist, modern micro-OS experience.
 
 ---
 
 <p align="center">
   <i>mOS is an independent project developed by <b>PROBE</b>.<br>Not affiliated with or endorsed by any other operating system vendors.</i>
-</p>b>.<br>Not affiliated with or endorsed by any other operating system vendors.</i>
 </p>
